@@ -1,6 +1,6 @@
-const Header = () => {
-    return <div className="header">You have 3 tasks left!</div>;
-  };
-  
-  export default Header;
-  
+import React from "react";
+const Header = ({ countNotDone }) => {
+  return <div className="header">You have {countNotDone} tasks left!</div>;
+};
+
+export default Header;

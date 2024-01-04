@@ -1,15 +1,14 @@
-const Footer = () => {
-    return (
+const Footer = ({ translations, language }) => {
+  return (
+    <div>
+      <h3>{translations[language].madeBy}MindX 🔥</h3>
       <div>
-        <h3>Made by MindX 🔥</h3>
-        <div>
-          <span>Available on:</span>
-          <span className="languague-picker">🇻🇳</span>
-          <span className="languague-picker selected">🇺🇸</span>
-        </div>
+        <span>{translations[language].availableOn}</span>
+        <span className="languague-picker">🇻🇳</span>
+        <span className="languague-picker selected">🇺🇸</span>
       </div>
-    );
-  };
-  
-  export default Footer;
-  
+    </div>
+  );
+};
+
+export default Footer;

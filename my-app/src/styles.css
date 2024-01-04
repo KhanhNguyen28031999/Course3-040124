@@ -118,3 +118,7 @@ body,
 .languague-picker.selected {
   opacity: 1;
 }
+.done {
+  text-decoration: line-through;
+  font-style: italic;
+}
